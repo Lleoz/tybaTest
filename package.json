@@ -10,7 +10,7 @@
     "postinstall": "npm run build",
     "copy:assets": "copyfiles -u 2 src/assets/BaltimoreCyberTrustRoot.crt.pem build/database/"
   },
-  "author": "Nicolas Rincon Mujica",
+  "author": "Leonardo Rivera",
   "license": "ISC",
   "dependencies": {
     "@sendgrid/mail": "^7.3.0",
