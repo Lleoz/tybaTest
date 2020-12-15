@@ -1,2 +1,7 @@
-# PanelEnel-Back
-Desarrollo del servidor en NodeJS para la consulta de la base de datos.
+# Servidor de prueba
+Desarrollado en Tyscript, es necesario ejecutar
+```sh
+$ npm install
+$ npm tsc -w
+$ nodemon build/
+```
