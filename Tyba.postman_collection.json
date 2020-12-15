@@ -1,0 +1,201 @@
+{
+	"info": {
+		"_postman_id": "6acf4d7a-3c0c-4f43-b08f-ab7c98d8530b",
+		"name": "Tyba",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/CreateUser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjoibGVvbmFyZG8zIiwiaWF0IjoxNjA4MDAzNDE2LCJleHAiOjE2MDgwMDcwMTZ9.1-tOJIGu9gZpjafHU8Gqqmr4Ljf_VahysK0LGqMKBRc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Leonardo3",
+							"type": "text"
+						},
+						{
+							"key": "user",
+							"value": "leonardo3",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/CreateUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"CreateUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user",
+							"value": "leonardo3",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/getRestaurant",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjoibGVvbmFyZG8zIiwiaWF0IjoxNjA4MDA1NzQyLCJleHAiOjE2MDgwMDkzNDJ9.iNAm_2jFyUAkv43AcdCSeR45xfWmEjeNROK3UX7Es8Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "ciudad",
+							"value": "NY",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "lat",
+							"value": "40.688072",
+							"type": "text"
+						},
+						{
+							"key": "lng",
+							"value": "-73.997385",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/getRestaurant",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"getRestaurant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/getLogs",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjoibGVvbmFyZG8zIiwiaWF0IjoxNjA4MDA1NzQyLCJleHAiOjE2MDgwMDkzNDJ9.iNAm_2jFyUAkv43AcdCSeR45xfWmEjeNROK3UX7Es8Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "ciudad",
+							"value": "NY",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "lat",
+							"value": "40.688072",
+							"type": "text"
+						},
+						{
+							"key": "lng",
+							"value": "-73.997385",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/getLogs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"getLogs"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
